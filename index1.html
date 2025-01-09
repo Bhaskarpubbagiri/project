@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="busSearchModule">
+        <h2>Bus Search</h2>
+        <label for="source">Source: </label>
+        <input type="text" id="source" placeholder="Enter source" />
+        <label for="destination">Destination: </label>
+        <input type="text" id="destination" placeholder="Enter destination" />
+        <button id="searchButton">Search Buses</button>
+        <div id="busList"></div>
+    </div>
+
+    <div id="requestModule" style="display:none;">
+        <h2>Request a Bus</h2>
+        <p id="requestInfo"></p>
+        <label for="atTheTime">Preferred Time: </label>
+        <input type="time" id="atTheTime" />
+        <button onclick="requestBus()">Submit Request</button>
+    </div>
+
+    <div id="feedback" class="visible"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
